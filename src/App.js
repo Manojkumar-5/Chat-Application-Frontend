@@ -24,7 +24,7 @@ const App = ({ getUserId, setSocket }) => {
       setIsLoading(false);
     };
     asyncFunc();
-    const socket = io('http://localhost:8080', {
+    const socket = io('https://chat-app-socketio-nodejs.herokuapp.com', {
       autoConnect: false,
     });
     setSocketRef.current(socket);
